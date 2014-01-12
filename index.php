@@ -11,7 +11,7 @@
     }
     
     // Setup the CSV line
-    $line = $_REQUEST['from'] . ',' . $_REQUEST['email'];
+    $line = DATE('Y-m-d') . ',' . $_REQUEST['from'] . ',' . $_REQUEST['email'];
     
     // Write this email
     file_put_contents('users.csv', $line);
