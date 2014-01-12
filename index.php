@@ -14,7 +14,7 @@
     $line = DATE('Y-m-d') . ',' . $_REQUEST['from'] . ',' . $_REQUEST['email'] . "\n";
     
     // Write this email
-    file_put_contents('users.csv', $line);
+    file_put_contents('users.csv', $line, FILE_APPEND);
     
     // Show the output
     echo "SAVED";
