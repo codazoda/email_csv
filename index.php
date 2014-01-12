@@ -1,7 +1,7 @@
 <?php
 
     // Verify the data
-    $required = array('from','email');
+    $required = array('from');
     
     // Make sure none of the required fields are blank
     foreach($required as $r) {
