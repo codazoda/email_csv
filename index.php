@@ -28,7 +28,7 @@
             'email' => array('email' => $_REQUEST['email'])
         );
         // Build a parameter list from the data
-        $pastData = http_build_query($data);
+        $postData = http_build_query($data);
         // Pass the data to mailchimp (GET)
         $result = file_get_contents($url . '?' . $postData);
     }
