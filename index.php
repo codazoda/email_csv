@@ -1,5 +1,8 @@
 <?php
 
+    // The following will allow AJAX requests from any origin
+    header('Access-Control-Allow-Origin: *');
+
     // Verify the data
     $required = array('from');
     
